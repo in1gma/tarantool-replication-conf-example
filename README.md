@@ -1,7 +1,7 @@
 # Replication
 ## master
 ```
-sudo docker run --name tmaster -d -v /home/maks/files/mlab/tarantool-replication-expamle-conf/instance01:/usr/local/etc/tarantool/instances.enabled tarantool/tarantool
+sudo docker run --name tmaster -d -v ~/files/mlab/tarantool-replication-conf-example/instance01:/usr/local/etc/tarantool/instances.enabled tarantool/tarantool
 sudo docker exec -i -t tmaster /bin/sh
 ```
 
@@ -22,7 +22,7 @@ box.info.replication
 
 ## slave
 ```
-sudo docker run --name tslave01 -d -v /home/maks/files/mlab/tarantool-replication-expamle-conf/instance02:/usr/local/etc/tarantool/instances.enabled tarantool/tarantool
+sudo docker run --name tslave01 -d -v ~/files/mlab/tarantool-replication-conf-example/instance02:/usr/local/etc/tarantool/instances.enabled tarantool/tarantool
 sudo docker exec -i -t tslave01 /bin/sh
 ```
 

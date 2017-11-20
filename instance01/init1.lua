@@ -1,8 +1,8 @@
 box.cfg {
-    listen = 3303,
+    listen = 3305,
     replication = {
-        'replicator:password@172.17.0.2:3303',
-        'replicator:password@172.17.0.3:3303'
+        'replicator:password@172.17.0.2:3305',
+        'replicator:password@172.17.0.3:3305'
     },
     log = 'log',
     read_only = false
